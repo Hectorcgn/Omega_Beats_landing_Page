@@ -1,0 +1,273 @@
+/*=========================================
+Imports
+=========================================*/
+@font-face {
+    font-family: labtop;
+    src: url("../font/labtop-secundo/LABTSECW.ttf");
+}
+@font-face {
+    font-family: roboto;
+    src: url("../font/Roboto/Roboto-Regular.ttf");
+}
+
+/*=========================================
+globale einstellungen
+=========================================*/
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 1440px;
+    font-family: roboto;
+}
+a{
+    font-family: labtop;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+ul {
+    list-style: none;
+}
+h1 {    
+    font-family: roboto;
+    font-size: 3.75rem;
+}
+p {
+    font-family: labtop;
+    font-size: 1.25rem;
+}
+/*=========================================
+header
+=========================================*/
+/*nav bar*/
+.nav_bar {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+    background-color: rgba(250, 235, 215, 0.534);
+}
+.nav_bar article {
+    padding-top: 4%;
+}
+.nav_bar img {
+    width: 150px;
+    height: 150px;
+}
+.nav_bar ul {
+    display:flex;
+    align-items: flex-end;
+    gap: 20px;
+    justify-content: flex-end;
+}
+.nav_reiter a:hover {
+    text-shadow: 0px 0px 3px violet;
+}
+.social_icons{
+    margin-top:  10px;
+}
+.social_icons img {
+    width: 30px;
+    height: 30px;
+} 
+.social_icons img:hover{
+    box-shadow: 0px 0px 5px 0px #2001197d;
+}
+/*=========================================
+Section_1(willkommen part)
+=========================================*/
+.sec_welcome {
+    background-image: url("../img/Bilder/IMG_0542.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.welcome_layer{
+    background-color: #20011983;
+
+}
+.welcome_txt {
+    color: #fff;
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+/*=========================================
+Section_2(großes Bild)
+=========================================*/
+.big_piture1 {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: rgba(250, 235, 215, 0.534);
+}
+.big_piture1 img{
+    width: 85%;
+}
+/*=========================================
+Section_3(slideshow Kunden bwertug)
+=========================================*/
+.sec_bewertungen {
+    background-color: #200119;
+    font-family: labtop;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+/*=========================================
+Section_4(text und button zu den angeboten)
+=========================================*/
+/*hintergrungfarbe für die section und abstand für die innen elemente*/
+.sec_angebote {
+    background-color: rgba(250, 235, 215, 0.534);
+    padding-bottom: 5%;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+/*Omega_logo */
+.angebote_txt_img {
+    display: flex;
+    justify-content: space-between;
+}
+.angebote_txt {
+    width: 300px;
+}
+.angebote_txt img {
+    width: 300px;
+}
+.angebote_txt p {
+    padding-bottom: 10%;
+}
+/*Button um zumangebot zu kommen*/
+.angebote_txt a {
+    background-color: rgb(139, 0, 139);;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+.angebote_txt a:hover {
+    box-shadow:0px 0px 5px 2px violet;
+}
+
+/*bild auf der rechten seite*/
+.location {
+    background-image: url("../img/Bilder/");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.angebote_img img{
+    width: 500px;
+}
+/*=========================================
+Section_5(Google_maps adresse)
+=========================================*/
+.location{
+background-image: url("../img/Bilder/location_2.png");
+background-size: cover;
+background-repeat: no-repeat;
+height: 400px;
+
+}
+/*=========================================
+Section_6 (contact)
+=========================================*/
+.sec_contact_uns {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: rgba(250, 235, 215, 0.534);
+    align-items: center;
+}
+.contact_txt {
+    width: 600px;
+}
+.contact_txt p{
+    padding-top: 50px;
+    line-height: 40px;
+}
+.contact_formular {
+    width: 400px;
+    background-color: #2001190e;
+    border-radius: 10px;
+    padding: 10px;
+}
+input[type=text]{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 5px;
+    color: #000;
+    font-size: 20px;
+    background-color:#fff;
+    font-family: labtop;
+}
+input[type=submit] {
+    font-family: labtop;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(139, 0, 139);
+    color: #fff;
+    border-radius: 10px;
+}
+input[type=submit]:hover{
+    box-shadow:0px 0px 5px 2px violet;}
+input[id=nachricht] {
+    height: 100px;
+    padding-bottom: 59px;    
+}
+label {
+    color: #200119;
+    font-family: labtop;
+}
+/*=========================================
+Section_7 (Footer ende der seite)
+=========================================*/
+footer {
+    background-color: #555555ad;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.foot_img_text img{
+    width: 200px;
+    height: 200px;
+}
+.foot_img_text p{
+    color: #fff;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.foot_navbar {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.foot_navbar a{
+    color: #fff;
+}
+.foot_navbar a:hover {
+    text-shadow: 0px 0px 3px violet;
+}
+.social_icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.social_icons img {
+    width: 30px;
+    height: 30px;
+}
