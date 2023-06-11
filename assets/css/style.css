@@ -71,22 +71,30 @@ header
 }
 .nav_bar ul {
     display:flex;
-    align-items: flex-end;
+    align-items: baseline;
     gap: 20px;
     justify-content: flex-end;
+}
+.nav_reiter li{
+    border-right: solid #200119;
+    border-left: solid #200119;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .nav_reiter a:hover {
     text-shadow: 0px 0px 3px violet;
 }
 .social_icons{
-    margin-top:  10px;
+    padding-top:  10px;
 }
 .social_icons img {
     width: 30px;
     height: 30px;
 } 
 .social_icons img:hover{
-    box-shadow: 0px 0px 5px 0px #2001197d;
+    box-shadow: 0px 0px 15px 0px rgba(32, 1, 25, 0.5);
+    width: 35px;
+    height: 35px
 }
 /*=========================================
 Section_1(willkommen part)
@@ -146,6 +154,14 @@ Section_3(slideshow Kunden bwertug)
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
+}
+.bewertung {
+    background-color: rgba(250, 235, 215, 0.1);
+    padding: 20px;
+    border-radius: 50px;
+}
+.bewertung:hover {
+    box-shadow: 0px 0px 10px 1px rgba(255, 254, 242,0.5);
 }
 .sec_bewertungen p{
     width: 600px;
@@ -301,6 +317,13 @@ footer {
 .foot_navbar a:hover {
     text-shadow: 0px 0px 3px violet;
 }
+.foot_navbar li{
+    border-right: solid #fff;
+    border-left: solid #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .social_icons {
     display: flex;
     justify-content: center;
@@ -356,6 +379,9 @@ Die Omega solos
     padding: 20px;
     border-radius: 50px;
 }
+.beats_solo:hover {
+    box-shadow: 0px 0px 10px 1px rgba(255, 254, 242,0.5);
+}
 .beats_solo img{
     border-radius: 50px;
 }
@@ -397,6 +423,9 @@ Die Omega Abos
     background-color: rgba(32, 1, 25, 0.1);
     padding: 20px;
     border-radius: 50px;
+}
+.beats_abo:hover {
+    box-shadow: 0px 0px 15px 0px rgba(32, 1, 25, 0.5);
 }
 .beats_abo img{
     border-radius: 50px;
