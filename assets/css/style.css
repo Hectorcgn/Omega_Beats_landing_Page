@@ -19,21 +19,23 @@ globale einstellungen
     box-sizing: border-box;
 }
 body{
-    width: 1440px;
+    width: 1420px;
+    height: auto;
     font-family: roboto;
 }
 a{
     font-family: labtop;
     text-decoration: none;
     color: black;
-    font-size: 1.5rem;
+    font-size: 24px;
 }
 ul {
     list-style: none;
 }
-h1 {    
+h1 {
+    padding-left: 20px;    
     font-family: roboto;
-    font-size: 3.75rem;
+    font-size: 60px;
 }
 h2 {
     padding-top: 20px;
@@ -41,7 +43,7 @@ h2 {
 }
 p {
     font-family: labtop;
-    font-size: 1.25rem;
+    font-size: 20px;
     padding-bottom: 10px;
 }
 img {
@@ -51,6 +53,7 @@ img {
 /*=========================================
 header
 =========================================*/
+
 /*nav bar*/
 .nav_bar {
     display: flex;
@@ -99,8 +102,6 @@ Section_1(willkommen part)
 .welcome_layer{
     background-color: #20011983;
     border-radius: 50px;
-
-
 }
 .welcome_txt {
     color: #fff;
@@ -130,17 +131,21 @@ Section_3(slideshow Kunden bwertug)
 .sec_bewertungen {
     background-color: #200119;
     font-family: labtop;
-    padding-top: 200px;
+    padding-top: 100px;
     padding-bottom: 200px;
     border-radius: 50px;
     color: #FFFEF2;
 }
+.sec_bewertungen h1 {
+    padding-bottom: 50px;
+    padding-left: 50px;
+}
 .bewerung_con {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    margin-left: 450px;
-    gap: 450px;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 .sec_bewertungen p{
     width: 600px;
