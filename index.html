@@ -18,6 +18,7 @@
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./assets/html/Angebote.html">Angebote</a></li>
                     <li><a href="#">Kontakt</a></li>
+                    <li><a href="./assets/html/Anmelden.html">Anmelden/Registrieren</a></li>
                 </ul>
                 <ul class="social_icons">
                     <li><a href="https://www.instagram.com/omega_beats51/"><img src="./assets/icons/instagram.png" alt="instagram-icon"></a></li>
@@ -150,21 +151,23 @@
                 </p>          
             </article>
             <article class="contact_formular">
-                <form 
-                action="/action_page.php">
-                <label for="fname">Vorname:</label><br>
-                <input type="text" id="vname" name="vname" 
-                value="..."><br>
-                <label for="lname">Nachname:</label><br>
-                <input type="text" id="nname" name="nname" 
-                value="..."><br><br>
-                <label for="lname">Nachricht:</label><br>
-                <input type="text" id="nachricht" name="nachticht" 
-                value="..."><br><br>
-                <input 
-                type="submit"
-                value="abschicken">
-                </form>             
+                <form action="">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" required placeholder="...">
+                    </div>
+                    <div>
+                        <label for="e-mail">E-mail Adresse:</label>
+                        <input type="email" name="e-mail" id="e-mail" required placeholder="Maxmustermann@examle.de">
+                    </div>
+                    <div>
+                        <label for="message">Nachricht:</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="..."></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Senden</button>
+                    </div>
+                </form>        
             </article>
         </section>
     </main>

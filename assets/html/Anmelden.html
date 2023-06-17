@@ -5,58 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>omega beats</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <p id="navlogo">
-                <a href="index.htm"><img src="/assets/img/Logos/Omega Beats Logo Mit Schrifft.png" alt=""></a>
-            </p>
-            <ul>
-                <li><a href="../../index.htm">Home</a></li>
-                <li><a href="./Angebote.html">Angebote</a></li>
-                <li><a href="./Impressum.html">Impressum</a></li>
-                <li><a href="./Kontakt.html">Kontakt</a></li>
-                <li><a href="https://www.instagram.com/omega_beats51/" target="_blank"><img src="/assets/icons/instagram.png" alt="Instagram"></a></li>
-                <li><a href="https://www.tiktok.com/@omega_beats51" target="_blank"><img src="/assets/icons/tiktok.png" alt="Tiktok"></a></li>
-                <li><a href="https://soundcloud.com/omega-beats51" target="_blank"><img src="/assets/icons/Soundcloud.png" alt="Soundcloud"></a></li>
-                <li><a href="https://www.youtube.com/channel/UCK0_QTMDjsNcNKetN8AR27w" target="_blank"><img src="/assets/icons/youtube.png" alt="Youtube"></a></li>
-                <li><a href="https://www.twitch.tv/omega_beats51" target="_blank"><img src="/assets/icons/Twich.png" alt="twitch"></a></li>
-                <li><a href="./Anmelden.html"><img src="/assets/icons/login_FILL0_wght400_GRAD0_opsz48.png" alt="Anmelden">login/Registrieren</a></li>
-                <li><a href="./Einkaufswagen.html"><img src="/assets/icons/shopping_cart_checkout_FILL0_wght400_GRAD0_opsz48.png" alt="Einkaufswagen">Einkaufswagen</a></li>
-            </ul>
+        <nav class="nav_bar">
+            <div>
+                <img src="../img/Logos/Omega_Beats_Logo_Mit Schrifft.png" alt="Omega_BeatsLogo">
+            </div>
+            <article>
+                <ul class="nav_reiter">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="./Angebote.html">Angebote</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="./Anmelden.html">Login</a></li>
+                </ul>
+                <ul class="social_icons">
+                    <li><a href="https://www.instagram.com/omega_beats51/"><img src="../icons/instagram.png" alt="instagram-icon"></a></li>
+                    <li><a href="https://www.tiktok.com/@omega_beats51"><img src="../icons/tiktok.png" alt="tiktok-icon"></a></li>
+                    <li><a href="https://soundcloud.com/omega-beats51"><img src="../icons/Soundcloud.png" alt="Soundcloud-icon"></a></li>
+                    <li><a href="https://www.youtube.com/@omega_beats51"><img src="../icons/youtube.png" alt="youtube-icon"></a></li>
+                </ul>
+            </article>
         </nav>
     </header>
     <main>
-        <section>
-            
+        <section class="login_con">
+            <form action="">
+                <div>
+                    <label for="bname">Benutzernam:</label>
+                    <input type="text" name="bname" id="bname" required placeholder="...">
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" required placeholder="...">
+                </div>
+                <div>
+                    <button type="submit">Login</button>
+                </div>
+                <div class="pws_reg">
+                    <div class="check">
+                        <label for="remeber"> Password spechern</label>
+                        <input type="checkbox" name="remeber" id="remeber">
+                    </div>
+                    <a href="./Kontakt.html">Registrieren</a>
+                </div>
+            </form>
         </section>
 
     </main>
     <footer>
-        <section>
-            <p id="footerlogo">
-                <a href="index.htm"><img src="/assets/img/Logos/Omega Beats Logo Mit Schrifft.png" alt=""></a>
-            </p>
-            <article>
+        <section class="foot_img_text">
+            <img src="../img/Logos/Omega_Beats_Logo_Mit Schrifft.png" alt="">
+            <article class="foot_navbar_socials">
                 <p>© 2019 - 2023</p>
-            </article>
-            <nav>
-                <ul>
-                    <li><a href="../../index.htm">Home</a></li>
+                <ul class="foot_navbar">
+                    <li><a href="../../index.html">Home</a></li>
                     <li><a href="./Angebote.html">Angebote</a></li>
-                    <li><a href="./Impressum.html">Impressum</a></li>
-                    <li><a href="./Kontakt.html">Kontakt</a></li>
-                    <li><a href="https://www.instagram.com/omega_beats51/" target="_blank"><img src="/assets/icons/instagram.png" alt="Instagram"></a></li>
-                    <li><a href="https://www.tiktok.com/@omega_beats51" target="_blank"><img src="/assets/icons/tiktok.png" alt="Tiktok"></a></li>
-                    <li><a href="https://soundcloud.com/omega-beats51" target="_blank"><img src="/assets/icons/Soundcloud.png" alt="Soundcloud"></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCK0_QTMDjsNcNKetN8AR27w" target="_blank"><img src="/assets/icons/youtube.png" alt="Youtube"></a></li>
-                    <li><a href="https://www.twitch.tv/omega_beats51" target="_blank"><img src="/assets/icons/Twich.png" alt="twitch"></a></li>
-                    <li><a href="./Anmelden.html"><img src="/assets/icons/login_FILL0_wght400_GRAD0_opsz48.png" alt="Anmelden">login/Registrieren</a></li>
-                    <li><a href="./Einkaufswagen.html"><img src="/assets/icons/shopping_cart_checkout_FILL0_wght400_GRAD0_opsz48.png" alt="Einkaufswagen">Einkaufswagen</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="./Anmelden.html"></a></li>
                 </ul>
-            </nav>
+                <ul class="social_icons">
+                    <li><a href="https://www.instagram.com/omega_beats51/"><img src="../icons/instagram.png" alt="instagram-icon"></a></li>
+                    <li><a href="https://www.tiktok.com/@omega_beats51"><img src="../icons/tiktok.png" alt="tiktok-icon"></a></li>
+                    <li><a href="https://soundcloud.com/omega-beats51"><img src="../icons/Soundcloud.png" alt="Soundcloud-icon"></a></li>
+                    <li><a href="https://www.youtube.com/@omega_beats51"><img src="../icons/youtube.png" alt="youtube-icon"></a></li>
+                </ul>
+            </article>
         </section>
     </footer>
 </body>

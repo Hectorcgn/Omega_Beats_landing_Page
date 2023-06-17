@@ -7,7 +7,7 @@ Imports
 }
 @font-face {
     font-family: roboto;
-    src: url("../font/Roboto/Roboto-Regular.ttf");
+    src: url("../font/Quicksand/Quicksand-VariableFont_wght.ttf");
 }
 
 /*=========================================
@@ -19,7 +19,7 @@ globale einstellungen
     box-sizing: border-box;
 }
 body{
-    width: 1425px;
+    width: 100%;
     height: auto;
     font-family: roboto;
     margin-left: auto;
@@ -62,7 +62,7 @@ header
     justify-content: space-between;
     padding-right: 50px;
     background-color: rgba(250, 235, 215, 0.534);
-    border-radius: 50px;
+    border-radius: 10px;
 }
 .nav_bar article {
     padding-top: 4%;
@@ -106,7 +106,7 @@ Section_1(willkommen part)
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 50px;
+    
 
 }
 .welcome_layer{
@@ -129,7 +129,6 @@ Section_2(großes Bild)
     padding-top: 5%;
     padding-bottom: 5%;
     background-color: rgba(250, 235, 215, 0.534);
-    border-radius: 50px;
 }
 .big_piture1 img{
     width: 1000px;
@@ -143,7 +142,6 @@ Section_3(slideshow Kunden bwertug)
     font-family: labtop;
     padding-top: 100px;
     padding-bottom: 200px;
-    border-radius: 50px;
     color: #FFFEF2;
 }
 .sec_bewertungen h1 {
@@ -160,7 +158,7 @@ Section_3(slideshow Kunden bwertug)
 .bewertung {
     background-color: rgba(250, 235, 215, 0.1);
     padding: 20px;
-    border-radius: 50px;
+
 }
 .bewertung:hover {
     box-shadow: 0px 0px 10px 1px rgba(255, 254, 242,0.5);
@@ -178,8 +176,6 @@ Section_4(text und button zu den angeboten)
     padding-top: 5%;
     padding-left: 10%;
     padding-right: 10%;
-    border-radius: 50px;
-
 }
 /*Omega_logo */
 .angebote_txt_img {
@@ -203,7 +199,6 @@ Section_4(text und button zu den angeboten)
     padding-right: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
-    border-radius: 10px;
 }
 .angebote_txt a:hover {
     box-shadow:0px 0px 5px 2px violet;
@@ -218,7 +213,7 @@ Section_4(text und button zu den angeboten)
 }
 .angebote_img img{
     width: 500px;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 /*=========================================
 Section_5(Google_maps adresse)
@@ -228,7 +223,6 @@ Section_5(Google_maps adresse)
     background-size: cover;
     background-repeat: no-repeat;
     height: 400px;
-    border-radius: 50px;
 }
 /*=========================================
 Section_6 (contact)
@@ -242,8 +236,6 @@ Section_6 (contact)
     padding-bottom: 5%;
     background-color: rgba(250, 235, 215, 0.534);
     align-items: center;
-    border-radius: 50px;
-
 }
 .contact_txt {
     width: 600px;
@@ -258,34 +250,32 @@ Section_6 (contact)
     border-radius: 10px;
     padding: 10px;
 }
-input[type=text]{
+.contact_formular form {
+    display: flex;
+    flex-direction: column;
+}
+label{
+    display: block;
+    font-family: labtop;
+    font-size: 18px;
+    border: none;
+}
+input {
     width: 100%;
     height: 30px;
+    font-family: labtop;
+    border: none;
     border-radius: 10px;
+    font-size: 18px;
     padding-left: 5px;
-    color: #000;
-    font-size: 20px;
-    background-color:#fff;
-    font-family: labtop;
 }
-input[type=submit] {
-    font-family: labtop;
-    font-size: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: rgb(139, 0, 139);
-    color: #fff;
+textarea {
+    width: 100%;
+    border: none;
     border-radius: 10px;
-}
-input[type=submit]:hover{
-    box-shadow:0px 0px 5px 2px violet;}
-input[id=nachricht] {
-    height: 100px;
-    padding-bottom: 59px;    
-}
-label {
-    color: #200119;
+    font-size: 18px;
     font-family: labtop;
+    padding-left: 5px;
 }
 /*=========================================
 Section_7 (Footer ende der seite)
@@ -295,7 +285,7 @@ footer {
     text-align: center;
     padding-top: 5%;
     padding-bottom: 5%;
-    border-radius: 50px;
+
 }
 .foot_img_text img{
     width: 200px;
@@ -449,4 +439,70 @@ Die Omega Abos
 }
 .beats_abo div:hover{
     box-shadow:0px 0px 15px 0px rgba(255, 0, 255,0.5);
+}
+/*=========================================
+Logn seite
+=========================================*/
+.login_con {
+    text-align: center;
+    background-color: #200119;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login_con form {
+    width: 50%;
+    height:fit-content;
+    background-color: rgba(250, 235, 215 ,0.2);
+    padding: 2%;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: antiquewhite;
+}
+.login_con form:hover {
+    box-shadow: 0px 0px 10px 1px rgba(255, 254, 242,0.5);
+}
+.login_con form input{
+    height: 30px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.login_con form label{
+    padding-bottom: 5px;
+}
+.login_con form div {
+    padding-bottom: 30px;
+}
+button{
+    background-color: darkorchid;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+button:hover {
+    box-shadow:0px 0px 5px 2px violet;
+}
+.login_con a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration-line: underline;
+}
+.pws_reg {
+    display: flex;
+    justify-content: space-evenly;
+}
+.check {
+    display: flex;
+}
+.check label {
+    width: 140px;
+}
+.check input {
+    width: 20px;
 }
