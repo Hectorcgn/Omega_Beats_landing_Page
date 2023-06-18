@@ -333,7 +333,7 @@ START Angebot seite
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 50px;
+
 }
 .sec_opener_angeb_layer {
     background-color: hsla(314, 94%, 6%, 0.5);
@@ -342,7 +342,7 @@ START Angebot seite
     display: flex;
     justify-content: flex-end;
     padding-right: 200px;
-    border-radius: 50px;
+
 }
 .sec_opener_angeb_layer p {
     color: #fff;
@@ -358,7 +358,7 @@ Die Omega solos
     color: #fff;
     padding-top: 30px;
     padding-bottom: 30px;
-    border-radius: 50px;
+
 }
 .solo_row{
     display: flex;
@@ -454,7 +454,7 @@ Logn seite
 .login_con form {
     width: 50%;
     height:fit-content;
-    background-color: rgba(250, 235, 215 ,0.2);
+    background-color: rgba(250, 235, 215 ,0.1);
     padding: 2%;
     border-radius: 50px;
     margin-left: auto;
@@ -505,4 +505,55 @@ button:hover {
 }
 .check input {
     width: 20px;
+}
+/*=========================================
+Re seite
+=========================================*/
+.reg_con {
+    background-color: #200119;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.reg_con form {
+    color: #FFFEF2;
+    background-color: rgba(250, 235, 215 ,0.1);
+    width: 80%;
+    padding: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+}
+.reg_con form:hover {
+    box-shadow: 0px 0px 10px 1px rgba(255, 254, 242,0.5);
+}
+.reg_con form article{
+    display: flex;
+}
+.reg_con form article ul{
+    padding-right: 10%;
+}
+.reg_con form input{
+    width: 50%;
+}
+.reg_con form div {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 20px;
+}
+.reg_con form article ul .gender{
+    justify-content: normal;
+}
+.reg_con form .gender input{
+    width: 20px;
+}.reg_con form .gender label {
+    margin-right: 5px;
+}
+.reg_con form ul{
+    width: 50%;
+}
+.reg_con form ul span{
+    height: 20px;
 }
